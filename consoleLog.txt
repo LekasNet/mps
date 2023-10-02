@@ -1,0 +1,21 @@
+// consolLog ex 1-5, 7 //
+mkdir .\Work\Study\mps && cd .\Work\Study\mps\  # создаём директорию для репозитория и переходим в неё
+git init  # инициализируем репозиторий
+vim test.txt
+vim test.py
+git add * 
+git commit -m "git... git never changes..."  # создаём два файла и добавляем в коммит
+vim test.txt
+git add *
+git commit -m "but test.txt was changed"  # изменяем один файл и добавляем в новый коммит
+git checkout -b test_branch  # создаём новую ветку и переходим в неё
+vim test.txt
+git add *
+git commit -m "but test.txt was changed again"  # изменяем один файл и добавляем в новый коммит
+git checkout master  # переходим в корневую ветку для слияния
+git merge "test_branch" "master"  # производим слияние
+git remote add origin https://github.com/LekasNet/mps.git  # создаём определитель для потока
+git push --set-upstream origin master  # устанавливаем определитель для потока
+git checkout test_branch
+git push --set-upstream origin test_branch  # делаем то же самое для второй ветки
+git pull

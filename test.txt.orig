@@ -1,5 +1,8 @@
 Some simple text
 Some other simple text
 One more other simple text
+<<<<<<< HEAD
 Some simple text
+=======
 One moore other simple text
+>>>>>>> 221e9e56fde773bdbc87b97ae893f4e5c83e02c2
