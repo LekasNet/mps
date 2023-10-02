@@ -1,1 +1,2 @@
 Some simple text
+Some other simple text
