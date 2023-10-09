@@ -1,0 +1,3 @@
+git@github.com:LekasNet/mps.git
+pora pit pivo, dyadya
+
